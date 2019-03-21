@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="355.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CameraController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="68.0" prefWidth="649.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="startCameraBtn" mnemonicParsing="false" onAction="#startCamera" text="Start Camera" />
+            <CheckBox fx:id="mirror" mnemonicParsing="false" text="Mirror" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <ImageView fx:id="currentFrame" fitHeight="424.0" fitWidth="636.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <Label text="Camera Feed" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>
